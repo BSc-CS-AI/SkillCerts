@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SkillCerts</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Poiret+One&family=Rationale&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <style>
+            .banner{
+                background-color: #CD5656;
+                font-family: "Rationale", sans-serif;
+                color: white;
+                height: 15rem;   
+                padding-top: 2%;            
+            }
+            
+            h3{
+                font-family: "Poiret One", sans-serif;
+                font-size: 2.5rem;
+            }
+            h1{
+                font-size: 10rem;
+            }
+            .logo-clg{
+                height: 10rem;
+                width: 11rem;
+            }
+            .logo-fp{
+                height: 13rem;
+                width:15rem;
+            }
+            .row{
+                justify-content: space-between;
+            }
+            .heading{
+                font-family: "Poiret One", sans-serif;
+                font-weight: 600;
+                font-size: 2rem;
+                color: #6E5773;
+            }
+            .nav-link{
+                font-family: "Instrument Serif", serif;
+                font-size: 2rem;
+            }
+            p{
+                font-family: "Instrument Serif", serif;
+                font-size: 1.5rem;
+            }
+            h5{
+                font-family: "Poiret One", sans-serif;
+                font-weight: 600;
+            }
+            .content{
+                list-style-type: none;
+            }
+            .content > li{
+                font-family: "Instrument Serif", serif;
+                font-size: 1.2rem;
+            }
+            hr{
+                margin-top: 2rem;
+            }
+            a{
+                font-family: "Instrument Serif", serif;
+                color:#6E5773;
+                margin: 2rem;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            a:hover{
+                color:#8B76A5;
+            }
+            footer{
+                background-color: #FF8A8A;
+            }
+            footer > p{
+                font-size: 3rem;
+                color: white;
+            }
+            .link{
+                font-size: 1.3rem;
+            }
+            .accordion-button{
+                font-family: "Poiret One", sans-serif;
+                font-weight: 600;
+                font-size: 1.3rem;
+                color:#6E5773
+            }
+            .accordion-body{
+                font-family: "Instrument Serif", serif;
+                font-size: 1.5rem;
+            }
+            .accordion-button:not(.collapsed){
+                background-color: #FF8A8A;
+                color:#fce4ec;
+                font-size: 1.3rem;
+            }
+            .accordion-button:focus{
+                border-color: #FF8A8A;
+            }
+            .query>li{
+                font-size: 1.2rem;
+            }
+            @media (max-width: 576px) {
+                .logo-clg{
+                    height: 7rem;
+                    width: 8rem;
+                }
+                .logo-fp{
+                    height: 9rem;
+                    width: 13rem;
+                }
+                .banner{
+                    height: 9rem;
+                    padding-top: 4%;
+                }
+                h3{
+                    font-size: 1.5rem;
+                }
+                h1{
+                    font-size: 7rem;
+                }
+                a{
+                    margin: .5rem;
+                }
+                .about{
+                    font-size: 1.5rem;
+                }
+                footer > p{
+                    font-size: 2rem;
+                }
+                .nav-link{
+                    font-size: 1rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="row container-fluid">
+            <img class="col-sm-3 logo-clg order-1 order-sm-1 mt-5 img-fluid" src="images/logo-clg.png"/>
+            <p class="col-sm-6 text-center mt-3 order-3 order-sm-2 heading">Srimathi Devkunvar Nanalal Bhatt College for Women<br>&<br>FACE Prep Campus</p>
+            <img class="col-sm-3 mt-3 order-2 order-sm-3 logo-fp img-fluid" src="images/logo-fp.png"/>
+        </section>
+        <header class="container-fluid text-center banner">
+            <h1>SkillCerts</h1>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container justify-content-center">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"      data-bs-target="#navbarCentered" aria-controls="navbarCentered" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarCentered">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="linkedin.html">LinkedIn</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Certifications</a></li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="container py-5">
+            <h3 class="text-center mb-4">
+                💡 LinkedIn FAQs for Students
+            </h3>
+            <div class="accordion" id="linkedinFAQ" data-aos="fade-up">
+             
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="faq1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                    1. What is LinkedIn Learning?
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#linkedinFAQ">
+                    <div class="accordion-body">
+                    A collection of courses on everything from Excel to coding to public speaking. You get a certificate at the end!
+                    </div>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="faq2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    2. What kind of profile photo should I use?
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#linkedinFAQ">
+                    <div class="accordion-body">
+                    A clear, friendly headshot — no filters, no group photos, no sunglasses.
+                    </div>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="faq3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    3. What do recruiters actually look for in a student’s profile?
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#linkedinFAQ">
+                    <div class="accordion-body">
+                    A clear photo, simple headline, listed skills, some projects or achievements.
+                    </div>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="faq4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    4. What kind of posts can I make as a student?
+                    </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#linkedinFAQ">
+                    <div class="accordion-body">
+                    Courses you finish, projects you build, events you attend, even small wins!
+                    </div>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="faq5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    5. How do I add a course certificate to LinkedIn?
+                    </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#linkedinFAQ">
+                    <div class="accordion-body">
+                    Profile → Licenses & Certifications → Add details → Save ✅
+                    </div>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="faq6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                    6. I don’t have any experience. Can I still use LinkedIn?
+                    </button>
+                </h2>
+                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="faq6" data-bs-parent="#linkedinFAQ">
+                    <div class="accordion-body">
+                    Yup! Just add your college, what you're studying, projects, and what you're learning.
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="container my-5">
+            <div class="card shadow p-4" data-aos="fade-up" style="border-left: 8px solid #CD5656; border-radius: 1rem; font-family: 'Poiret One', sans-serif;">
+                <div class="row g-3 align-items-center">
+                <div class="col-md-2 text-center">
+                    <i class="bi bi-envelope-fill" style="font-size: 3rem; color: #CD5656;"></i>
+                </div>
+                <div class="col-md-10">
+                    <h3 class="mb-2" style="color: #6E5773;">Have a question or need help?</h3>
+                    <p class="mb-1" style="font-size: 1.5rem;">Feel free to reach out to us at:</p>
+                    <ul class="list-unstyled query" style="font-size: 1.1rem;">
+                        <li><i class="bi bi-person" style="color: #CD5656;"></i> &nbsp; <strong>Student Query Team:</strong> [Name], [Name], [Name] from BSc CS(AI) 2nd year</li>
+                        <li><i class="bi bi-envelope" style="color: #CD5656;"></i> &nbsp; <strong>Email:</strong>queryteam.skillcerts@gmail.com</li>
+                        <br>
+                        <li><strong style="font-family: 'Instrument Serif';">Send your queries to the above mail with your name, department and admission number as subject. Our team will contact you back.</strong></li>
+                        <br>
+                        <li style="font-family: 'Instrument Serif'; font-weight: 500;">Students who couldn't enable Premium membership after activation send in your details using this form after 00-00-2025<a href='#' style="font-size: 1.2rem;">Google form</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
+    </body>
+</html>

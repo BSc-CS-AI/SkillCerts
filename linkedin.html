@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SkillCerts</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Poiret+One&family=Rationale&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <style>
+            /* existing styles untouched */
+            .banner{
+                background-color: #CD5656;
+                font-family: "Rationale", sans-serif;
+                color: white;
+                height: 15rem;   
+                padding-top: 2%;            
+            }
+            h2{
+                font-family: "Poiret One", sans-serif;
+            }
+            h3{
+                font-family: "Poiret One", sans-serif;
+                font-size: 2.5rem;
+            }
+            h1{
+                font-size: 10rem;
+            }
+            .logo-clg{
+                height: 10rem;
+                width: 11rem;
+            }
+            .logo-fp{
+                height: 13rem;
+                width:15rem;
+            }
+            .row{
+                justify-content: space-between;
+            }
+            .heading{
+                font-family: "Poiret One", sans-serif;
+                font-weight: 600;
+                font-size: 2rem;
+                color: #6E5773;
+            }
+            .nav-link{
+                font-family: "Instrument Serif", serif;
+                font-size: 2rem;
+            }
+            p{
+                font-family: "Instrument Serif", serif;
+                font-size: 1.5rem;
+            }
+            h5{
+                font-family: "Poiret One", sans-serif;
+                font-weight: 600;
+            }
+            .content{
+                list-style-type: none;
+            }
+            .content > li{
+                font-family: "Instrument Serif", serif;
+                font-size: 1.2rem;
+            }
+            hr{
+                margin-top: 2rem;
+            }
+            a{
+                font-family: "Instrument Serif", serif;
+                color:#6E5773;
+                margin: 2rem;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            a:hover{
+                color:#8B76A5;
+            }
+            footer{
+                background-color: #FF8A8A;
+            }
+            footer > p{
+                font-size: 3rem;
+                color: white;
+            }
+            .link{
+                font-size: 1.3rem;
+            }
+            .accordion-button:not(.collapsed){
+                background-color: #FF8A8A;
+                color:#fce4ec;
+            }
+            .accordion-button:focus{
+                border-color: #FF8A8A;
+            }
+            .accordion-body{
+                font-family: "Instrument Serif", serif;
+                font-size: 1.5rem;
+            }
+            .feature-box {
+                background: white;
+                border-radius: 12px;
+                padding: 1.5rem;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+                margin-bottom: 1.5rem;
+                transition: transform 0.3s;
+                font-family: "Instrument Serif", serif;
+                font-size: 1.2rem;
+            }
+            .feature-box:hover {
+                transform: translateY(-5px);
+            }
+            .icon {
+                font-size: 1.8rem;
+                margin-right: 0.5rem;
+            }
+            .timeline-horizontal {
+                position: relative;
+                padding: 2rem 1rem;
+                border-top: 4px solid #CD5656;
+                overflow-x: auto;
+            }
+            .timeline-step {
+                flex: 0 0 auto;
+                text-align: center;
+                position: relative;
+                font-family: "Poiret One", sans-serif;
+                color: #6E5773;
+                transition: transform 0.3s ease;
+            }
+            .timeline-step i {
+                font-size: 2rem;
+                background-color: #CD5656;
+                color: white;
+                padding: 1rem;
+                border-radius: 50%;
+                margin-bottom: 0.5rem;
+                transition: background-color 0.3s;
+            }
+            .timeline-step span {
+                display: block;
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+            .timeline-step:hover {
+                transform: scale(1.1);
+            }
+            .timeline-step:hover i {
+                background-color: #8B76A5;
+            }
+            @media (max-width: 576px) {
+                .logo-clg{
+                    height: 7rem;
+                    width: 8rem;
+                }
+                .logo-fp{
+                    height: 9rem;
+                    width: 13rem;
+                }
+                .banner{
+                    height: 9rem;
+                    padding-top: 4%;
+                }
+                h3{
+                    font-size: 1.5rem;
+                }
+                h1{
+                    font-size: 7rem;
+                }
+                a{
+                    margin: .5rem;
+                }
+                .about{
+                    font-size: 1.5rem;
+                }
+                footer > p{
+                    font-size: 2rem;
+                }
+                .nav-link{
+                    font-size: 1rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="row container-fluid">
+            <img class="col-sm-3 logo-clg order-1 order-sm-1 mt-5 img-fluid" src="images/logo-clg.png"/>
+            <p class="col-sm-6 text-center mt-3 order-3 order-sm-2 heading">Srimathi Devkunvar Nanalal Bhatt College for Women<br>&<br>FACE Prep Campus</p>
+            <img class="col-sm-3 mt-3 order-2 order-sm-3 logo-fp img-fluid" src="images/logo-fp.png"/>
+        </section>
+        <header class="container-fluid text-center banner">
+            <h1>SkillCerts</h1>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container justify-content-center">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"      data-bs-target="#navbarCentered" aria-controls="navbarCentered" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarCentered">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">FAQs and Contact</a></li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="container">
+            <p>LinkedIn isn’t just a social platform — it’s your digital career toolkit. From building a standout profile to discovering job opportunities, growing your network, and learning in-demand skills through LinkedIn Learning, every feature is designed to help you connect, grow, and get hired. Whether you're a fresher or a future leader, LinkedIn helps you show up like a professional from day one.</p>
+            <video class="mt-3 img-fluid d-block mx-auto" controls poster="images/banner.jpg"><source src="images/" type="video/mp4"></video>
+            <br>
+            <h3>LinkedIn Profile Creation</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <video class="mt-3 img-fluid d-block mx-auto" controls poster="images/banner.jpg"><source src="images/" type="video/mp4"></video>
+            <hr>
+            <div class="container py-5">
+                <h2 class="text-center mb-4">LinkedIn Power Features</h2>
+                <div class="row row-cols-1 row-cols-md-2 g-4">                    
+                    <div class="col">
+                    <div class="feature-box d-flex align-items-start">
+                        <span class="icon">🌐</span>
+                        <div>
+                        <strong>Professional Profile</strong><br>
+                        Build a digital resume with your skills, education & achievements.
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col">
+                    <div class="feature-box d-flex align-items-start">
+                        <span class="icon">🤝</span>
+                        <div>
+                        <strong>Networking</strong><br>
+                        Connect with alumni, recruiters, mentors & peers.
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col">
+                    <div class="feature-box d-flex align-items-start">
+                        <span class="icon">🔍</span>
+                        <div>
+                        <strong>Smart Job Search</strong><br>
+                        Find jobs with filters & set alerts that fit you.
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col">
+                    <div class="feature-box d-flex align-items-start">
+                        <span class="icon">🎓</span>
+                        <div>
+                        <strong>LinkedIn Learning</strong><br>
+                        Explore 1,000+ courses & boost your skillset.
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col">
+                    <div class="feature-box d-flex align-items-start">
+                        <span class="icon">📰</span>
+                        <div>
+                        <strong>News Feed</strong><br>
+                        Stay updated with career trends and company news.
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col">
+                    <div class="feature-box d-flex align-items-start">
+                        <span class="icon">⭐</span>
+                        <div>
+                        <strong>Endorsements & Recos</strong><br>
+                        Add credibility through peer feedback & endorsements.
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col">
+                    <div class="feature-box d-flex align-items-start">
+                        <span class="icon">💬</span>
+                        <div>
+                        <strong>Messaging & InMail</strong><br>
+                        Chat with pros or message outside your circle.
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col">
+                    <div class="feature-box d-flex align-items-start">
+                        <span class="icon">🏢</span>
+                        <div>
+                        <strong>Company Pages</strong><br>
+                        Discover job openings, work culture & more.
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col">
+                    <div class="feature-box d-flex align-items-start">
+                        <span class="icon">👥</span>
+                        <div>
+                        <strong>Groups & Communities</strong><br>
+                        Join discussions, share insights & grow.
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col">
+                    <div class="feature-box d-flex align-items-start">
+                        <span class="icon">📢</span>
+                        <div>
+                        <strong>Content Sharing</strong><br>
+                        Post your work, wins, and thoughts to get noticed.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <hr>
+        <!-- Timeline Section -->
+        <section class="container py-5">
+        <h3 class="text-center mb-4">
+            🔗 LinkedIn: Your Career Powerhouse
+        </h3>
+
+        <div class="timeline-horizontal d-flex flex-wrap justify-content-center gap-4">
+            <div class="timeline-step" data-bs-toggle="tooltip" data-bs-placement="top" title="Your profile becomes your personal portfolio and digital resume.">
+            <i class="bi bi-person-badge"></i>
+            <span class="mt-3">Build Your Brand</span>
+            </div>
+            <div class="timeline-step" data-bs-toggle="tooltip" data-bs-placement="top" title="Be discovered by recruiters with just your skills and headline.">
+            <i class="bi bi-briefcase"></i>
+            <span class="mt-3">Open Doors</span>
+            </div>
+            <div class="timeline-step" data-bs-toggle="tooltip" data-bs-placement="top" title="Meet mentors, collaborators, and decision-makers.">
+            <i class="bi bi-people"></i>
+            <span class="mt-3">Connections</span>
+            </div>
+            <div class="timeline-step" data-bs-toggle="tooltip" data-bs-placement="top" title="Upskill with LinkedIn Learning courses (free with Premium).">
+            <i class="bi bi-book"></i>
+            <span class="mt-3">Keep Learning</span>
+            </div>
+            <div class="timeline-step" data-bs-toggle="tooltip" data-bs-placement="top" title="Follow updates, events, and emerging opportunities.">
+            <i class="bi bi-globe"></i>
+            <span class="mt-3">Know Industry</span>
+            </div>
+            <div class="timeline-step" data-bs-toggle="tooltip" data-bs-placement="top" title="Get profile views by HRs actively hiring.">
+            <i class="bi bi-eye"></i>
+            <span class="mt-3">Be Found</span>
+            </div>
+            <div class="timeline-step" data-bs-toggle="tooltip" data-bs-placement="top" title="Career tips, interview prep, resume help — all in one place.">
+            <i class="bi bi-bar-chart-line"></i>
+            <span class="mt-3">Climb Up</span>
+            </div>
+            <div class="timeline-step" data-bs-toggle="tooltip" data-bs-placement="top" title="Show off your endorsements, recommendations, and results.">
+            <i class="bi bi-patch-check"></i>
+            <span class="mt-3">Build Trust</span>
+            </div>
+            <div class="timeline-step" data-bs-toggle="tooltip" data-bs-placement="top" title="Publish achievements, certificates, and success stories.">
+            <i class="bi bi-award"></i>
+            <span class="mt-3">Celebrate Wins</span>
+            </div>
+            <div class="timeline-step" data-bs-toggle="tooltip" data-bs-placement="top" title="Promote your services, build leads, and attract clients.">
+            <i class="bi bi-shop"></i>
+            <span class="mt-3">Grow Biz</span>
+            </div>
+        </div>
+        </section>
+        <script>
+            const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
+    </body>
+</html>
