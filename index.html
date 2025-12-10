@@ -159,6 +159,13 @@
                 font-size: 2rem;
                 color: #555;
             }
+            /* Reduce image size for slide 5 and 6 */
+            .carousel-item:nth-child(5) img,
+            .carousel-item:nth-child(6) img,
+            .carousel-item:nth-child(7) img {
+                width: 35% !important;   /* Reduce width */
+                margin-left: 5rem !important; /* Adjust alignment */
+            }
             @media (max-width: 768px) {
                 .carousel-item .row {
                     flex-direction: column;
@@ -253,6 +260,10 @@
                         <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="0" class="active"></button>
                         <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="1"></button>
                         <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="4"></button>
+                        <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="5"></button>
+                        <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="6"></button>
                     </div>
                     <div class="carousel-inner">
                         <!-- Slide 1 -->
@@ -362,4 +373,5 @@
         </script>
     </body>
 </html>
+
 
